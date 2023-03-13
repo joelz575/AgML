@@ -94,7 +94,7 @@ def visualize_images_with_labels(images, labels = None, *, info = None, shape = 
             "This method does not support non-rectangular shapes.")
 
     fig, axes = plt.subplots(
-        shape[0], shape[1], figsize = (shape[1] * 2, shape[0] * 2))
+        shape[0], shape[1], figsize = (shape[1], shape[0]))
     try:
         iter_ax = axes.flat
     except AttributeError: # If showing only a single image.
